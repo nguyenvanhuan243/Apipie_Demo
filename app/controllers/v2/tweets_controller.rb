@@ -5,14 +5,12 @@ module V2
     api!
     def index
       @tweets = @user.tweets.all
-
       render json: @tweets
     end
 
     api!
     def show
       @tweet = @user.tweets.find(params[:id])
-
       render json: @tweet
     end
 
@@ -42,7 +40,6 @@ module V2
     end
     def update
       @tweet = @user.tweets.find(params[:id])
-
       if @tweet.update_attributes(tweet_params)
         head :no_content
       else
@@ -54,7 +51,6 @@ module V2
     def destroy
       @tweet = @user.tweets.find(params[:id])
       @tweet.destroy
-
       head :no_content
     end
 

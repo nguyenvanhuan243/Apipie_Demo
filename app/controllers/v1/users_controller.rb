@@ -16,14 +16,13 @@ module V1
     api!
     def index
       @users = User.all
-
       render json: @users
     end
 
     api!
     def show
-      @user = User.find(params[:id])
-
+      # Should use find_by_id(:id), instead of find(:id)
+      @user = User.find_by_id(params[:id])
       render json: @user
     end
 
@@ -31,7 +30,6 @@ module V1
     param_group :user
     def create
       @user = User.new(user_params)
-
       if @user.save
         render json: @user, status: :created, location: @user
       else
@@ -43,7 +41,6 @@ module V1
     param_group :user
     def update
       @user = User.find(params[:id])
-
       if @user.update_attributes(user_params)
         head :no_content
       else
@@ -55,7 +52,6 @@ module V1
     def destroy
       @user = User.find(params[:id])
       @user.destroy
-
       head :no_content
     end
 

@@ -3,14 +3,12 @@ module V2
     api :GET, "/v2/users", "List users"
     def index
       @users = User.all
-
       render json: @users
     end
 
     api :GET, "/v2/users/:id", "Show an user"
     def show
       @user = User.find(params[:id])
-
       render json: @user
     end
 
@@ -18,7 +16,6 @@ module V2
     param_group :user, V1::UsersController
     def create
       @user = User.new(user_params)
-
       if @user.save
         render json: @user, status: :created, location: @user
       else
@@ -30,7 +27,6 @@ module V2
     param_group :user, V1::UsersController
     def update
       @user = User.find(params[:id])
-
       if @user.update_attributes(user_params)
         head :no_content
       else
@@ -42,7 +38,6 @@ module V2
     def destroy
       @user = User.find(params[:id])
       @user.destroy
-
       head :no_content
     end
 
