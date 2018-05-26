@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,21 +10,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20120711191746) do
+ActiveRecord::Schema.define(version: 2018_05_26_141102) do
+
+  create_table "addresses", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "phone"
+    t.string "code"
+    t.string "country"
+    t.string "hourse_number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "text"
+    t.string "title"
+    t.string "type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "tweets", force: :cascade do |t|
-    t.integer  "user_id"
-    t.text     "text"
+    t.integer "user_id"
+    t.text "text"
     t.datetime "scheduled_at"
-    t.boolean  "sent"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.boolean "sent"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "name"
+    t.string "email"
+    t.string "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

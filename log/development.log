@@ -3843,3 +3843,2008 @@ Processing by V1::TweetsController#index as HTML
 Completed 200 OK in 18ms (Views: 8.7ms | ActiveRecord: 1.5ms)
 
 
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 20:50:32 +0700
+Processing by Apipie::ApipiesController#index as HTML
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/activesupport-5.2.0/lib/active_support/lazy_load_hooks.rb:71)
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.4ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (3.3ms)
+Completed 200 OK in 177ms (Views: 10.3ms)
+
+
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 20:50:32 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 20:50:32 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 20:50:32 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 20:50:32 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 20:50:32 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 20:50:32 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 20:50:33 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 20:50:33 +0700
+Started GET "/apipie/1/tweets/index.en.html" for 127.0.0.1 at 2018-05-26 20:50:36 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Parameters: {"version"=>"1", "resource"=>"tweets", "method"=>"index.en.html"}
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/apipie_404.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/apipie_404.html.erb within layouts/apipie/apipie (1.1ms)
+Completed 404 Not Found in 78ms (Views: 3.5ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 20:50:36 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 20:50:36 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 20:50:36 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 20:50:36 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 20:50:36 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 20:50:36 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 20:50:36 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 20:50:36 +0700
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 20:50:38 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.5ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (2.9ms)
+Completed 200 OK in 96ms (Views: 5.2ms)
+
+
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 20:50:38 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 20:50:38 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 20:50:38 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 20:50:38 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 20:50:38 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 20:50:38 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 20:50:38 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 20:50:38 +0700
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 20:50:41 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.3ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (2.1ms)
+Completed 200 OK in 72ms (Views: 3.9ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 20:50:41 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 20:50:41 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 20:50:41 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 20:50:41 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 20:50:41 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 20:50:41 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 20:50:41 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 20:50:41 +0700
+Started GET "/apipie/1.en.html" for 127.0.0.1 at 2018-05-26 20:50:44 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Parameters: {"version"=>"1.en.html"}
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/apipie_404.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/apipie_404.html.erb within layouts/apipie/apipie (1.8ms)
+Completed 404 Not Found in 71ms (Views: 4.8ms)
+
+
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 20:50:44 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 20:50:44 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 20:50:44 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 20:50:44 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 20:50:44 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 20:50:44 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 20:50:44 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 20:50:44 +0700
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 20:50:47 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.3ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (2.1ms)
+Completed 200 OK in 84ms (Views: 5.0ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 20:50:47 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 20:50:47 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 20:50:47 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 20:50:47 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 20:50:47 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 20:50:47 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 20:50:47 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 20:50:47 +0700
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started GET "/assets/rails.png" for 127.0.0.1 at 2018-05-26 20:51:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 20:52:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users/1/addresses"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 20:52:05 +0700
+Processing by V1::UsersController#index as HTML
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 155ms (Views: 10.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 20:54:28 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.4ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (2.4ms)
+Completed 200 OK in 68ms (Views: 4.3ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 20:54:28 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 20:54:28 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 20:54:28 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 20:54:28 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 20:54:28 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 20:54:28 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 20:54:28 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 20:54:28 +0700
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 20:54:33 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.4ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (3.9ms)
+Completed 200 OK in 87ms (Views: 7.0ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 20:54:33 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 20:54:33 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 20:54:33 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 20:54:33 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 20:54:33 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 20:54:33 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 20:54:33 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 20:54:33 +0700
+Started GET "/apipie/1/addresses.en.html" for 127.0.0.1 at 2018-05-26 20:54:34 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Parameters: {"version"=>"1", "resource"=>"addresses.en.html"}
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/apipie_404.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/apipie_404.html.erb within layouts/apipie/apipie (1.1ms)
+Completed 404 Not Found in 69ms (Views: 3.4ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 20:54:35 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 20:54:35 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 20:54:35 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 20:54:35 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 20:54:35 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 20:54:35 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 20:54:35 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 20:54:35 +0700
+Started GET "/api/v1/jobs" for 127.0.0.1 at 2018-05-26 20:54:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/jobs"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+Started GET "/api/v1/jobs" for 127.0.0.1 at 2018-05-26 20:54:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/jobs"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 20:54:48 +0700
+Processing by V1::UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 20:54:51 +0700
+Processing by V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 20:55:24 +0700
+Processing by V1::UsersController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NameError (undefined local variable or method `debugger' for #<V1::UsersController:0x007f86aa5a86c8>):
+  
+app/controllers/v1/users_controller.rb:18:in `index'
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 20:58:18 +0700
+Processing by V1::UsersController#index as HTML
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 23591ms (Views: 17.5ms | ActiveRecord: 8.7ms)
+
+
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 20:58:57 +0700
+Processing by V1::UsersController#index as HTML
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 12644ms (ActiveRecord: 2.2ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/v1/users_controller.rb:19:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 20:59:22 +0700
+Processing by V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 1094ms (Views: 150.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 20:59:29 +0700
+Processing by V1::UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7163ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 20:59:47 +0700
+Processing by V1::UsersController#index as HTML
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 158ms (Views: 14.2ms | ActiveRecord: 1.6ms)
+
+
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:00:33 +0700
+Processing by V1::UsersController#index as HTML
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 152ms (Views: 9.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/v1/users/1" for 127.0.0.1 at 2018-05-26 21:00:51 +0700
+Processing by V1::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:00:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users/1/addresses"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/home/huannguyen/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:01:12 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `addresses' for #<User:0x0055a41eae8b58>):
+  
+app/controllers/v1/addresses_controller.rb:7:in `index'
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:01:41 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'addresses'):
+  
+app/controllers/v1/addresses_controller.rb:7:in `index'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from load at /home/huannguyen/.rvm/gems/ruby-2.4.1/bin/rake:23)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (111.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (99.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTweets (20120627155559)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from load at /home/huannguyen/.rvm/gems/ruby-2.4.1/bin/rake:23)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (153.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (88.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTweets (20120627155559)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "tweets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "text" text, "scheduled_at" datetime, "sent" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20120627155559"]]
+  [1m[35m (91.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20120711191746)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20120711191746"]]
+  [1m[35m (86.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateAddresses (20180526114719)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "addresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "phone" varchar, "code" varchar, "country" varchar, "hourse_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180526114719"]]
+  [1m[35m (116.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-26 14:02:12.531403"], ["updated_at", "2018-05-26 14:02:12.531403"]]
+  [1m[35m (109.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:02:23 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 1.9ms)
+
+
+  
+NoMethodError (undefined method `addresses' for nil:NilClass):
+  
+app/controllers/v1/addresses_controller.rb:7:in `index'
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:02:30 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `addresses' for nil:NilClass):
+  
+app/controllers/v1/addresses_controller.rb:7:in `index'
+Started POST "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:02:59 +0700
+Processing by V1::UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"admin", "email"=>"fdsfdsfd"}}
+Unpermitted parameter: :email
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "admin"], ["created_at", "2018-05-26 14:02:59.879141"], ["updated_at", "2018-05-26 14:02:59.879141"]]
+  [1m[35m (94.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 105ms (Views: 2.9ms | ActiveRecord: 94.7ms)
+
+
+Started POST "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:03:06 +0700
+Processing by V1::UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"admin", "email"=>"fdsfdsfd"}}
+Unpermitted parameter: :email
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "admin"], ["created_at", "2018-05-26 14:03:06.368581"], ["updated_at", "2018-05-26 14:03:06.368581"]]
+  [1m[35m (94.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 100ms (Views: 1.4ms | ActiveRecord: 95.5ms)
+
+
+Started POST "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:03:49 +0700
+Processing by V1::UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"admin", "email"=>"fdsfdsfd"}}
+Unpermitted parameter: :email
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "admin"], ["created_at", "2018-05-26 14:03:49.681700"], ["updated_at", "2018-05-26 14:03:49.681700"]]
+  [1m[35m (126.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 130ms (Views: 0.9ms | ActiveRecord: 126.5ms)
+
+
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:03:55 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Address.):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:03:57 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Address.):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+Started POST "/api/v1/users/1/tweets" for 127.0.0.1 at 2018-05-26 21:04:24 +0700
+Processing by V1::TweetsController#create as */*
+  Parameters: {"tweet"=>{"text"=>"Hurray, I've survived", "scheduled_at"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTweet Create (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("user_id", "text", "scheduled_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["text", "Hurray, I've survived"], ["scheduled_at", "2012-12-22 01:00:00"], ["created_at", "2018-05-26 14:04:24.705936"], ["updated_at", "2018-05-26 14:04:24.705936"]]
+  [1m[35m (176.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 205ms (Views: 3.8ms | ActiveRecord: 179.0ms)
+
+
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:04:32 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 3.5ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Address.):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:04:34 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Address.):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+Started POST "/api/v1/users/1/tweets" for 127.0.0.1 at 2018-05-26 21:04:42 +0700
+Processing by V1::TweetsController#create as */*
+  Parameters: {"tweet"=>{"text"=>"Hurray, I've survived", "scheduled_at"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTweet Create (1.0ms)[0m  [1m[32mINSERT INTO "tweets" ("user_id", "text", "scheduled_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["text", "Hurray, I've survived"], ["scheduled_at", "2012-12-22 01:00:00"], ["created_at", "2018-05-26 14:04:42.720455"], ["updated_at", "2018-05-26 14:04:42.720455"]]
+  [1m[35m (65.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 95ms (Views: 4.2ms | ActiveRecord: 68.0ms)
+
+
+Started POST "/api/v1/users/1/tweets" for 127.0.0.1 at 2018-05-26 21:05:06 +0700
+Processing by V1::TweetsController#create as */*
+  Parameters: {"tweet"=>{"text"=>"Hurray, I've survived", "scheduled_at"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTweet Create (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("user_id", "text", "scheduled_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["text", "Hurray, I've survived"], ["scheduled_at", "2012-12-22 01:00:00"], ["created_at", "2018-05-26 14:05:06.874223"], ["updated_at", "2018-05-26 14:05:06.874223"]]
+  [1m[35m (77.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 104ms (Views: 3.4ms | ActiveRecord: 79.5ms)
+
+
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started POST "/api/v1/users/1/tweets" for 127.0.0.1 at 2018-05-26 21:05:10 +0700
+Processing by V1::TweetsController#create as */*
+  Parameters: {"tweet"=>{"text"=>"Hurray, I've survived", "scheduled_at"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTweet Create (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("user_id", "text", "scheduled_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["text", "Hurray, I've survived"], ["scheduled_at", "2012-12-22 01:00:00"], ["created_at", "2018-05-26 14:05:11.185674"], ["updated_at", "2018-05-26 14:05:11.185674"]]
+  [1m[35m (70.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 248ms (Views: 5.0ms | ActiveRecord: 75.1ms)
+
+
+Started POST "/api/v1/users/1/tweets" for 127.0.0.1 at 2018-05-26 21:05:12 +0700
+Processing by V1::TweetsController#create as */*
+  Parameters: {"tweet"=>{"text"=>"Hurray, I've survived", "scheduled_at"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTweet Create (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("user_id", "text", "scheduled_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["text", "Hurray, I've survived"], ["scheduled_at", "2012-12-22 01:00:00"], ["created_at", "2018-05-26 14:05:12.013397"], ["updated_at", "2018-05-26 14:05:12.013397"]]
+  [1m[35m (108.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 115ms (Views: 2.4ms | ActiveRecord: 109.4ms)
+
+
+Started POST "/api/v1/users/1/tweets" for 127.0.0.1 at 2018-05-26 21:05:42 +0700
+Processing by V1::TweetsController#create as */*
+  Parameters: {"tweet"=>{"text"=>"Hurray, I've survived", "scheduled_at"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTweet Create (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("user_id", "text", "scheduled_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["text", "Hurray, I've survived"], ["scheduled_at", "2012-12-22 01:00:00"], ["created_at", "2018-05-26 14:05:42.115204"], ["updated_at", "2018-05-26 14:05:42.115204"]]
+  [1m[35m (116.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 140ms (Views: 2.4ms | ActiveRecord: 118.4ms)
+
+
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:05:52 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Address.):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:06:14 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Address.):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:06:47 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Address.):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:07:03 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 3.3ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Address.):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from load at /home/huannguyen/.rvm/gems/ruby-2.4.1/bin/rake:23)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "addresses"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (110.2ms)[0m  [1m[35mCREATE TABLE "addresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "phone" varchar, "code" varchar, "country" varchar, "hourse_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "tweets"[0m
+  [1m[35m (99.8ms)[0m  [1m[35mCREATE TABLE "tweets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "text" text, "scheduled_at" datetime, "sent" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (108.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (121.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (67.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180526114719)[0m
+  [1m[35m (110.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20120711191746),
+(20120627155559);
+
+[0m
+  [1m[35m (110.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-26 14:08:06.962225"], ["updated_at", "2018-05-26 14:08:06.962225"]]
+  [1m[35m (76.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "addresses"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (116.1ms)[0m  [1m[35mCREATE TABLE "addresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "phone" varchar, "code" varchar, "country" varchar, "hourse_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "tweets"[0m
+  [1m[35m (109.8ms)[0m  [1m[35mCREATE TABLE "tweets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "text" text, "scheduled_at" datetime, "sent" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (98.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (99.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (71.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180526114719)[0m
+  [1m[35m (99.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20120711191746),
+(20120627155559);
+
+[0m
+  [1m[35m (93.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-26 14:08:07.749189"], ["updated_at", "2018-05-26 14:08:07.749189"]]
+  [1m[35m (89.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2018-05-26 14:08:07.845567"], ["key", "environment"]]
+  [1m[35m (80.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:08:16 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 2.8ms)
+
+
+  
+NoMethodError (undefined method `addresses' for nil:NilClass):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:08:17 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `addresses' for nil:NilClass):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from load at /home/huannguyen/.rvm/gems/ruby-2.4.1/bin/rake:23)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (111.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (77.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTweets (20120627155559)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "tweets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "text" text, "scheduled_at" datetime, "sent" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20120627155559"]]
+  [1m[35m (130.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20120711191746)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20120711191746"]]
+  [1m[35m (80.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateAddresses (20180526114719)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "addresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "phone" varchar, "code" varchar, "country" varchar, "hourse_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180526114719"]]
+  [1m[35m (105.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-26 14:08:53.399219"], ["updated_at", "2018-05-26 14:08:53.399219"]]
+  [1m[35m (80.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:08:59 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 1.3ms)
+
+
+  
+NoMethodError (undefined method `addresses' for nil:NilClass):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:00 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `addresses' for nil:NilClass):
+  
+app/controllers/v1/addresses_controller.rb:19:in `create'
+Started POST "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:09:11 +0700
+Processing by V1::UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"admin"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "admin"], ["created_at", "2018-05-26 14:09:11.269351"], ["updated_at", "2018-05-26 14:09:11.269351"]]
+  [1m[35m (101.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 118ms (Views: 1.7ms | ActiveRecord: 103.8ms)
+
+
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:17 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAddress Create (0.2ms)[0m  [1m[32mINSERT INTO "addresses" ("user_id", "phone", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["phone", "Hurray"], ["country", "2012-12-22T01:00"], ["created_at", "2018-05-26 14:09:17.994163"], ["updated_at", "2018-05-26 14:09:17.994163"]]
+  [1m[35m (119.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 146ms (Views: 3.1ms | ActiveRecord: 120.4ms)
+
+
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:20 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:22 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:25 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAddress Create (0.2ms)[0m  [1m[32mINSERT INTO "addresses" ("user_id", "phone", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["phone", "Hurray"], ["country", "2012-12-22T01:00"], ["created_at", "2018-05-26 14:09:25.074748"], ["updated_at", "2018-05-26 14:09:25.074748"]]
+  [1m[35m (116.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 121ms (Views: 1.2ms | ActiveRecord: 117.3ms)
+
+
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:27 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAddress Create (0.3ms)[0m  [1m[32mINSERT INTO "addresses" ("user_id", "phone", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["phone", "Hurray"], ["country", "2012-12-22T01:00"], ["created_at", "2018-05-26 14:09:27.074499"], ["updated_at", "2018-05-26 14:09:27.074499"]]
+  [1m[35m (88.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 95ms (Views: 2.0ms | ActiveRecord: 88.8ms)
+
+
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:28 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:34 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:09:36 +0700
+Processing by V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/users/1" for 127.0.0.1 at 2018-05-26 21:09:39 +0700
+Processing by V1::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:42 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:45 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAddress Create (0.2ms)[0m  [1m[32mINSERT INTO "addresses" ("user_id", "phone", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["phone", "Hurray"], ["country", "2012-12-22T01:00"], ["created_at", "2018-05-26 14:09:45.133518"], ["updated_at", "2018-05-26 14:09:45.133518"]]
+  [1m[35m (105.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 110ms (Views: 1.5ms | ActiveRecord: 105.5ms)
+
+
+Started POST "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:54 +0700
+Processing by V1::AddressesController#create as */*
+  Parameters: {"address"=>{"phone"=>"Hurray", "country"=>"2012-12-22T01:00"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAddress Create (1.2ms)[0m  [1m[32mINSERT INTO "addresses" ("user_id", "phone", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["phone", "Hurray"], ["country", "2012-12-22T01:00"], ["created_at", "2018-05-26 14:09:54.755728"], ["updated_at", "2018-05-26 14:09:54.755728"]]
+  [1m[35m (85.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 96ms (Views: 1.4ms | ActiveRecord: 86.6ms)
+
+
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:09:56 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:10:33 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 5]]
+Completed 200 OK in 21ms (Views: 6.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:10:37 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAddress Load (0.2ms)[0m  [1m[34mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 5]]
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from require at script/rails:6)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from load at /home/huannguyen/.rvm/gems/ruby-2.4.1/bin/rake:23)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "addresses"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (114.1ms)[0m  [1m[35mCREATE TABLE "addresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "phone" varchar, "code" varchar, "country" varchar, "hourse_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "tweets"[0m
+  [1m[35m (76.7ms)[0m  [1m[35mCREATE TABLE "tweets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "text" text, "scheduled_at" datetime, "sent" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (98.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (133.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (129.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180526114719)[0m
+  [1m[35m (99.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20120711191746),
+(20120627155559);
+
+[0m
+  [1m[35m (111.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-26 14:13:08.434480"], ["updated_at", "2018-05-26 14:13:08.434480"]]
+  [1m[35m (91.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "addresses"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (133.3ms)[0m  [1m[35mCREATE TABLE "addresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "phone" varchar, "code" varchar, "country" varchar, "hourse_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "tweets"[0m
+  [1m[35m (96.9ms)[0m  [1m[35mCREATE TABLE "tweets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "text" text, "scheduled_at" datetime, "sent" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (110.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (101.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (134.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180526114719)[0m
+  [1m[35m (99.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20120711191746),
+(20120627155559);
+
+[0m
+  [1m[35m (86.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-26 14:13:09.309088"], ["updated_at", "2018-05-26 14:13:09.309088"]]
+  [1m[35m (63.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2018-05-26 14:13:09.376496"], ["key", "environment"]]
+  [1m[35m (75.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from load at /home/huannguyen/.rvm/gems/ruby-2.4.1/bin/rake:23)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (84.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (66.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTweets (20120627155559)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "tweets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "text" text, "scheduled_at" datetime, "sent" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20120627155559"]]
+  [1m[35m (100.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20120711191746)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20120711191746"]]
+  [1m[35m (139.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateAddresses (20180526114719)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "addresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "phone" varchar, "code" varchar, "country" varchar, "hourse_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180526114719"]]
+  [1m[35m (106.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20180526141102)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "text" varchar, "title" varchar, "type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180526141102"]]
+  [1m[35m (128.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-26 14:13:22.081136"], ["updated_at", "2018-05-26 14:13:22.081136"]]
+  [1m[35m (83.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:20:28 +0700
+Processing by Apipie::ApipiesController#index as HTML
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/activesupport-5.2.0/lib/active_support/lazy_load_hooks.rb:71)
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.3ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (3.2ms)
+Completed 200 OK in 275ms (Views: 8.1ms)
+
+
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:20:29 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:20:29 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:20:29 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:20:29 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:20:29 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:20:29 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:20:29 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:20:29 +0700
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:20:31 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.4ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (3.4ms)
+Completed 200 OK in 239ms (Views: 5.2ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:20:31 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:20:31 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:20:31 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:20:31 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:20:31 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:20:31 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:20:31 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:20:31 +0700
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:20:35 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.3ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (2.1ms)
+Completed 200 OK in 152ms (Views: 4.1ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:20:35 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:20:35 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:20:35 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:20:35 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:20:35 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:20:35 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:20:35 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:20:35 +0700
+Started GET "/api/v1/users/1/addresses" for 127.0.0.1 at 2018-05-26 21:20:39 +0700
+Processing by V1::AddressesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `addresses' for nil:NilClass):
+  
+app/controllers/v1/addresses_controller.rb:7:in `index'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:20:48 +0700
+Processing by V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from load at /home/huannguyen/.rvm/gems/ruby-2.4.1/bin/rake:23)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (157.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (111.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTweets (20120627155559)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "tweets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "text" text, "scheduled_at" datetime, "sent" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20120627155559"]]
+  [1m[35m (109.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20120711191746)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20120711191746"]]
+  [1m[35m (93.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateAddresses (20180526114719)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "addresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "phone" varchar, "code" varchar, "country" varchar, "hourse_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180526114719"]]
+  [1m[35m (75.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20180526141102)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "text" varchar, "title" varchar, "type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180526141102"]]
+  [1m[35m (119.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-26 14:20:57.994460"], ["updated_at", "2018-05-26 14:20:57.994460"]]
+  [1m[35m (135.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:31:19 +0700
+Processing by V1::UsersController#index as HTML
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 153ms (Views: 5.5ms | ActiveRecord: 1.8ms)
+
+
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started POST "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:31:30 +0700
+Processing by V1::UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"admin"}}
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "admin"], ["created_at", "2018-05-26 14:31:30.782176"], ["updated_at", "2018-05-26 14:31:30.782176"]]
+  [1m[35m (31.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 190ms (Views: 1.2ms | ActiveRecord: 33.2ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:31:33 +0700
+Processing by V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:31:57 +0700
+Processing by V1::CommentsController#create as */*
+  Parameters: {"address"=>{"title"=>"Comment Title", "country"=>"Spam"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (uninitialized constant ApplicationRecord):
+  
+app/models/comment.rb:1:in `<top (required)>'
+app/controllers/v1/comments_controller.rb:12:in `create'
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:33:09 +0700
+Processing by V1::UsersController#index as HTML
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 164ms (Views: 13.3ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:33:11 +0700
+Processing by V1::CommentsController#create as */*
+  Parameters: {"address"=>{"title"=>"Comment Title", "country"=>"Spam"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 17ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/v1/comments_controller.rb:27:in `comment_params'
+app/controllers/v1/comments_controller.rb:12:in `create'
+Started POST "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:33:12 +0700
+Processing by V1::CommentsController#create as */*
+  Parameters: {"address"=>{"title"=>"Comment Title", "country"=>"Spam"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/v1/comments_controller.rb:27:in `comment_params'
+app/controllers/v1/comments_controller.rb:12:in `create'
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: Using `Rails::Application` subclass to start the server is deprecated and will be removed in Rails 6.0. Please change `run Demo::Application` to `run Rails.application` in config.ru. (called from require at script/rails:6)
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from env_config at /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/application.rb:252)
+Started POST "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:33:47 +0700
+Processing by V1::CommentsController#create as */*
+  Parameters: {"comment"=>{"title"=>"Comment Title", "country"=>"Spam"}, "user_id"=>"1"}
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/huannguyen/Documents/Apipie_Demo/app/models/user.rb:1)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :country
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["title", "Comment Title"], ["created_at", "2018-05-26 14:33:48.242282"], ["updated_at", "2018-05-26 14:33:48.242282"]]
+  [1m[35m (86.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 267ms (Views: 3.9ms | ActiveRecord: 90.1ms)
+
+
+Started GET "/api/v1/users/1" for 127.0.0.1 at 2018-05-26 21:33:52 +0700
+Processing by V1::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:33:54 +0700
+Processing by V1::CommentsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 5]]
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:33:56 +0700
+Processing by V1::CommentsController#create as */*
+  Parameters: {"comment"=>{"title"=>"Comment Title", "country"=>"Spam"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :country
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["title", "Comment Title"], ["created_at", "2018-05-26 14:33:56.907822"], ["updated_at", "2018-05-26 14:33:56.907822"]]
+  [1m[35m (96.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 102ms (Views: 1.4ms | ActiveRecord: 97.1ms)
+
+
+Started GET "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:33:59 +0700
+Processing by V1::CommentsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 5]]
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:34:00 +0700
+Processing by V1::CommentsController#create as */*
+  Parameters: {"comment"=>{"title"=>"Comment Title", "country"=>"Spam"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :country
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["title", "Comment Title"], ["created_at", "2018-05-26 14:34:00.557229"], ["updated_at", "2018-05-26 14:34:00.557229"]]
+  [1m[35m (159.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 165ms (Views: 0.9ms | ActiveRecord: 160.2ms)
+
+
+Started GET "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:34:02 +0700
+Processing by V1::CommentsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 5]]
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:34:05 +0700
+Processing by V1::CommentsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 5]]
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:34:07 +0700
+Processing by V1::CommentsController#create as */*
+  Parameters: {"comment"=>{"title"=>"Comment Title", "country"=>"Spam"}, "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :country
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["title", "Comment Title"], ["created_at", "2018-05-26 14:34:07.031182"], ["updated_at", "2018-05-26 14:34:07.031182"]]
+  [1m[35m (120.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 127ms (Views: 1.6ms | ActiveRecord: 120.5ms)
+
+
+Started GET "/api/v1/users/1/comments" for 127.0.0.1 at 2018-05-26 21:34:09 +0700
+Processing by V1::CommentsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 5]]
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:36:35 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 99ms
+
+
+  
+RuntimeError (Validator for string not found.):
+  
+app/controllers/v1/addresses_controller.rb:18:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:36:39 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 80ms
+
+
+  
+RuntimeError (Validator for string not found.):
+  
+app/controllers/v1/addresses_controller.rb:18:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:37:14 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 73ms
+
+
+  
+RuntimeError (Validator for string not found.):
+  
+app/controllers/v1/addresses_controller.rb:18:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:37:33 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (1.2ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (3.8ms)
+Completed 200 OK in 87ms (Views: 6.5ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:37:33 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:37:33 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:37:33 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:37:33 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:37:33 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:37:33 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:37:33 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:37:33 +0700
+Started GET "/apipie/1/addresses.en.html" for 127.0.0.1 at 2018-05-26 21:37:36 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Parameters: {"version"=>"1", "resource"=>"addresses.en.html"}
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/apipie_404.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/apipie_404.html.erb within layouts/apipie/apipie (1.5ms)
+Completed 404 Not Found in 86ms (Views: 3.5ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:37:36 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:37:36 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:37:36 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:37:36 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:37:36 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:37:36 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:37:36 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:37:36 +0700
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:37:52 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 69ms
+
+
+  
+RuntimeError (Validator for string not found.):
+  
+app/controllers/v1/addresses_controller.rb:18:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:38:33 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.5ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (3.6ms)
+Completed 200 OK in 86ms (Views: 6.3ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:38:33 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:38:33 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:38:33 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:38:33 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:38:33 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:38:33 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:38:33 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:38:33 +0700
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:39:07 +0700
+  
+SyntaxError (/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/addresses_controller.rb:13: syntax error, unexpected ':', expecting keyword_end
+      param :phone, :presence: true, allow_blank: true
+                              ^
+/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/addresses_controller.rb:13: Can't assign to true
+param :phone, :presence: true, allow_blank: true
+                              ^
+/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/addresses_controller.rb:37: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/v1/addresses_controller.rb:13: syntax error, unexpected ':', expecting keyword_end
+app/controllers/v1/addresses_controller.rb:13: Can't assign to true
+app/controllers/v1/addresses_controller.rb:37: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+app/controllers/v1/users_controller.rb:31:in `<class:UsersController>'
+app/controllers/v1/users_controller.rb:2:in `<module:V1>'
+app/controllers/v1/users_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:39:11 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 52ms
+
+
+  
+SyntaxError (/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/addresses_controller.rb:13: syntax error, unexpected ':', expecting keyword_end
+      param :phone, :presence: true, allow_blank: true
+                              ^
+/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/addresses_controller.rb:13: Can't assign to true
+param :phone, :presence: true, allow_blank: true
+                              ^
+/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/addresses_controller.rb:37: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/v1/addresses_controller.rb:13: syntax error, unexpected ':', expecting keyword_end
+app/controllers/v1/addresses_controller.rb:13: Can't assign to true
+app/controllers/v1/addresses_controller.rb:37: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:39:20 +0700
+  
+RuntimeError (Validator for {:allow_blank=>true, :parent=>#<Apipie::ParamDescription:0x007fa6f8ecc420 @options={:param_group=>nil}, @method_description=#<Apipie::MethodDescription:0x007fa6f8f1ae18 @method="create", @resource=#<Apipie::ResourceDescription:0x0056024cff1e60 @_methods={:index=>#<Apipie::MethodDescription:0x0056024da9d2b0 @method="index", @resource=#<Apipie::ResourceDescription:0x0056024cff1e60 ...>, @from_concern=nil, @apis=[], @full_description="", @errors=[], @returns=[], @see=[], @formats=nil, @examples=[], @metadata=nil, @params_ordered=[], @headers=[], @show=true>, :create=>#<Apipie::MethodDescription:0x007fa6f8c90b70 @method="create", @resource=#<Apipie::ResourceDescription:0x0056024cff1e60 ...>, @from_concern=nil, @apis=[], @full_description="", @errors=[], @returns=[], @see=[], @formats=nil, @examples=[], @metadata=nil, @params_ordered=[#<Apipie::ParamDescription:0x007fa6f8c48c08 @options={:param_group=>nil}, @method_description=#<Apipie::MethodDescription:0x007fa6f8c90b70 ...>, @name=:address, @as=:address, @desc="", @parent=nil, @metadata=nil, @required=false, @response_only=false, @request_only=false, @show=true, @allow_nil=false, @allow_blank=false, @validator=#<Apipie::Validator::HashValidator:70177557463880 param_description: ParamDescription: addresses#create#address>, @validations=[], @additional_properties=nil>], @headers=[], @show=true, @merged_errors=[]>}, @_params_args=[], @_errors_args=[], @_returns_args=[], @controller=V1::AddressesController, @_id="addresses", @_version="1", @_name="Addresses", @_parent=nil>, @from_concern=nil, @apis=[], @full_description="", @errors=[], @returns=[], @see=[], @formats=nil, @examples=[], @metadata=nil>, @name=:address, @as=:address, @desc="", @parent=nil, @metadata=nil, @required=false, @response_only=false, @request_only=false, @show=true, @allow_nil=false, @allow_blank=false>} not found.):
+  
+app/controllers/v1/addresses_controller.rb:18:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+app/controllers/v1/users_controller.rb:31:in `<class:UsersController>'
+app/controllers/v1/users_controller.rb:2:in `<module:V1>'
+app/controllers/v1/users_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:40:32 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.4ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (3.6ms)
+Completed 200 OK in 87ms (Views: 7.1ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:40:32 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:40:32 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:40:32 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:40:32 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:40:32 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:40:32 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:40:32 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:40:32 +0700
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:40:42 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (1.0ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (6.6ms)
+Completed 200 OK in 112ms (Views: 10.1ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:40:42 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:40:42 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:40:42 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:40:42 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:40:42 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:40:42 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:40:42 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:40:42 +0700
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:40:52 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 50ms
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 0..2)):
+  
+app/controllers/v1/users_controller.rb:30:in `<class:UsersController>'
+app/controllers/v1/users_controller.rb:2:in `<module:V1>'
+app/controllers/v1/users_controller.rb:1:in `<top (required)>'
+app/controllers/v1/comments_controller.rb:6:in `<class:CommentsController>'
+app/controllers/v1/comments_controller.rb:2:in `<module:V1>'
+app/controllers/v1/comments_controller.rb:1:in `<top (required)>'
+app/controllers/v1/addresses_controller.rb:6:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:41:41 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.3ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (2.4ms)
+Completed 200 OK in 73ms (Views: 4.2ms)
+
+
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:41:41 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:41:41 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:41:41 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:41:41 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:41:41 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:41:41 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:41:41 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:41:41 +0700
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:42:05 +0700
+Processing by V1::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 24ms (Views: 17.9ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:42:15 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.3ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (2.2ms)
+Completed 200 OK in 79ms (Views: 3.8ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:42:16 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:42:16 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:42:16 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:42:16 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:42:16 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:42:16 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:42:16 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:42:16 +0700
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:43:21 +0700
+  
+SyntaxError (/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/users_controller.rb:30: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+rs', 'Show all users:' link_to('http://localhost:3000/api/v1
+                              ^):
+  
+app/controllers/v1/users_controller.rb:30: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:43:25 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 56ms
+
+
+  
+SyntaxError (/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/users_controller.rb:30: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+rs', 'Show all users:' link_to('http://localhost:3000/api/v1
+                              ^):
+  
+app/controllers/v1/users_controller.rb:30: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/v1/comments_controller.rb:6:in `<class:CommentsController>'
+app/controllers/v1/comments_controller.rb:2:in `<module:V1>'
+app/controllers/v1/comments_controller.rb:1:in `<top (required)>'
+app/controllers/v1/addresses_controller.rb:6:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:43:38 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 43ms
+
+
+  
+NoMethodError (undefined method `link_to' for V1::UsersController:Class):
+  
+app/controllers/v1/users_controller.rb:30:in `<class:UsersController>'
+app/controllers/v1/users_controller.rb:2:in `<module:V1>'
+app/controllers/v1/users_controller.rb:1:in `<top (required)>'
+app/controllers/v1/comments_controller.rb:6:in `<class:CommentsController>'
+app/controllers/v1/comments_controller.rb:2:in `<module:V1>'
+app/controllers/v1/comments_controller.rb:1:in `<top (required)>'
+app/controllers/v1/addresses_controller.rb:6:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:43:51 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 45ms
+
+
+  
+NoMethodError (undefined method `link_to' for V1::UsersController:Class):
+  
+app/controllers/v1/users_controller.rb:30:in `<class:UsersController>'
+app/controllers/v1/users_controller.rb:2:in `<module:V1>'
+app/controllers/v1/users_controller.rb:1:in `<top (required)>'
+app/controllers/v1/comments_controller.rb:6:in `<class:CommentsController>'
+app/controllers/v1/comments_controller.rb:2:in `<module:V1>'
+app/controllers/v1/comments_controller.rb:1:in `<top (required)>'
+app/controllers/v1/addresses_controller.rb:6:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:44:15 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 44ms
+
+
+  
+SyntaxError (/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/users_controller.rb:30: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+, 'Show all users:', link_to "http://localhost:3000/api/v1/u
+                              ^):
+  
+app/controllers/v1/users_controller.rb:30: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/controllers/v1/comments_controller.rb:6:in `<class:CommentsController>'
+app/controllers/v1/comments_controller.rb:2:in `<module:V1>'
+app/controllers/v1/comments_controller.rb:1:in `<top (required)>'
+app/controllers/v1/addresses_controller.rb:6:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:44:23 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.5ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (2.7ms)
+Completed 200 OK in 92ms (Views: 4.7ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:44:23 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:44:23 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:44:23 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:44:23 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:44:23 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:44:23 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:44:23 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:44:23 +0700
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:44:42 +0700
+Processing by Apipie::ApipiesController#index as HTML
+Completed 500 Internal Server Error in 43ms
+
+
+  
+SyntaxError (/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/users_controller.rb:30: syntax error, unexpected '<'
+1/users', 'Show all users:', <a href="/profiles/1">Profile</
+                              ^
+/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/users_controller.rb:36: unknown regexp option - v
+/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/users_controller.rb:36: syntax error, unexpected tINTEGER, expecting keyword_end
+    api :GET, '/v1/users/:id', 'Show a user with
+                  ^
+/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/users_controller.rb:36: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+    api :GET, '/v1/users/:id', 'Show a user with id'
+                             ^
+/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/users_controller.rb:36: syntax error, unexpected tCONSTANT, expecting keyword_end
+i :GET, '/v1/users/:id', 'Show a user with id'
+                              ^
+/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/users_controller.rb:36: unterminated string meets end of file
+/home/huannguyen/Documents/Apipie_Demo/app/controllers/v1/users_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/v1/users_controller.rb:30: syntax error, unexpected '<'
+app/controllers/v1/users_controller.rb:36: unknown regexp option - v
+app/controllers/v1/users_controller.rb:36: syntax error, unexpected tINTEGER, expecting keyword_end
+app/controllers/v1/users_controller.rb:36: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+app/controllers/v1/users_controller.rb:36: syntax error, unexpected tCONSTANT, expecting keyword_end
+app/controllers/v1/users_controller.rb:36: unterminated string meets end of file
+app/controllers/v1/users_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/v1/comments_controller.rb:6:in `<class:CommentsController>'
+app/controllers/v1/comments_controller.rb:2:in `<module:V1>'
+app/controllers/v1/comments_controller.rb:1:in `<top (required)>'
+app/controllers/v1/addresses_controller.rb:6:in `<class:AddressesController>'
+app/controllers/v1/addresses_controller.rb:2:in `<module:V1>'
+app/controllers/v1/addresses_controller.rb:1:in `<top (required)>'
+app/controllers/v1/tweets_controller.rb:6:in `<class:TweetsController>'
+app/controllers/v1/tweets_controller.rb:2:in `<module:V1>'
+app/controllers/v1/tweets_controller.rb:1:in `<top (required)>'
+Started GET "/apipie" for 127.0.0.1 at 2018-05-26 21:45:14 +0700
+Processing by Apipie::ApipiesController#index as HTML
+  Rendering /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/_languages.erb (0.5ms)
+  Rendered /home/huannguyen/.rvm/gems/ruby-2.4.1/gems/apipie-rails-0.5.8/app/views/apipie/apipies/index.html.erb within layouts/apipie/apipie (3.6ms)
+Completed 200 OK in 133ms (Views: 5.5ms)
+
+
+Started GET "/apipie/stylesheets/bundled/bootstrap.min.css" for 127.0.0.1 at 2018-05-26 21:45:14 +0700
+Started GET "/apipie/javascripts/bundled/jquery.js" for 127.0.0.1 at 2018-05-26 21:45:14 +0700
+Started GET "/apipie/stylesheets/bundled/prettify.css" for 127.0.0.1 at 2018-05-26 21:45:14 +0700
+Started GET "/apipie/javascripts/bundled/bootstrap-collapse.js" for 127.0.0.1 at 2018-05-26 21:45:14 +0700
+Started GET "/apipie/stylesheets/application.css" for 127.0.0.1 at 2018-05-26 21:45:14 +0700
+Started GET "/apipie/stylesheets/bundled/bootstrap-responsive.min.css" for 127.0.0.1 at 2018-05-26 21:45:14 +0700
+Started GET "/apipie/javascripts/bundled/prettify.js" for 127.0.0.1 at 2018-05-26 21:45:14 +0700
+Started GET "/apipie/javascripts/apipie.js" for 127.0.0.1 at 2018-05-26 21:45:14 +0700
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-05-26 21:45:20 +0700
+Processing by V1::UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 19ms (Views: 12.0ms | ActiveRecord: 1.3ms)
+
+
